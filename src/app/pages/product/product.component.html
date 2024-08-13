@@ -1,0 +1,30 @@
+
+<div style="text-align:center; font-weight: bold;">
+  <p></p>
+  <img src="../../../assets/p im.jpg" style="height: 500px; width: 1500pX;">
+    </div>
+
+
+
+
+
+<div class="container">
+    <div class="row gx-6">
+      @for(item of product; track item.id){
+        
+        <div class="card" style="width: 20rem;display: flex; flex-direction: column; justify-content: space-between;">
+          <img src={{item.image}} class="card-img-top" alt="...">
+          <div class="card-body"style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <h5 class="card-title">{{item.Title}}</h5>
+            <p class="card-text">{{item.description}}</p>
+            </div>
+            <div style="display: flex; justify-content: center;">
+            <a routerlink="item.id" class="btn btn-primary">view</a>
+          </div>
+        </div>
+    
+  }
+  </div>
+</div>  
+
+      
